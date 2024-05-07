@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace HVNT.Test.Runtime
 {
+    /// <summary>
+    /// <see cref="App"/> is responsible for initializing any services created (currently, it is only the <see cref="ProjectSystemLocator"/>) 
+    /// </summary>
     public class App : MonoBehaviour
     {
         [SerializeField]

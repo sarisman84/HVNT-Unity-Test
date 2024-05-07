@@ -16,8 +16,11 @@ namespace HVNT.Test.Runtime
         }
 
         void FixedUpdate()
-        {
+        {   
+            //Casts a ray from the camera position that looks at the camera forward direction
             var hitSomething = Physics.Raycast(_cam.transform.position, _cam.transform.forward.normalized, out var hit);
+
+            //Checks if the user has touched the screen
             var hasTouchedScreen = Input.touchCount > 0;
 
             if (hitSomething && hit.collider.GetComponent<InteractableChest>() && hasTouchedScreen)

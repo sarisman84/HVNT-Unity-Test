@@ -19,7 +19,9 @@ namespace HVNT.Test.Runtime
             ProjectSystemLocator.Service.onReset += () => { anim.Play("Idle"); };
         }
 
-
+        /// <summary>
+        /// Opens the chest. Nothing happens if <see cref="ProjectSystemLocator.PointAmount"/> is less than 2 
+        /// </summary>
         public void OnChestOpen()
         {
             if (ProjectSystemLocator.Service.PointAmount() < 2)
