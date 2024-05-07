@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Graphics/UI/Default.uss?fileID=7433441132597879392&amp;guid=9ae7d475a3c823440b1048d3bd636e25&amp;type=3#Default" />
+    <ui:VisualElement name="aim_root" style="flex-grow: 1; padding-top: 0; margin-top: -40px; margin-bottom: -40px;">
+        <ui:VisualElement name="aim_indicator" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Graphics/Sprites/Aim%20Indicator.png?fileID=-2413806693520163455&amp;guid=8f28851848727374ca765e3de2507f6d&amp;type=3#Circle&apos;); -unity-background-scale-mode: scale-to-fit; width: 10px; height: 10px; max-height: 15px; max-width: 15px; margin-left: auto; margin-top: auto; margin-bottom: auto; padding-top: 0; padding-bottom: 0; margin-right: auto;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="bottom_toolbar" style="height: 40px; align-items: stretch; flex-direction: row; justify-content: center;">
+        <ui:Button text="Add&#10;NewPoint" display-tooltip-when-elided="true" name="add_point" class="button" style="width: auto;" />
+        <ui:Button text="Remove&#10;Last Point" display-tooltip-when-elided="true" name="remove_point" class="button" style="width: auto;" />
+        <ui:Button text="Reset&#10;Everything" display-tooltip-when-elided="true" name="reset" class="button" style="width: auto;" />
+    </ui:VisualElement>
+</ui:UXML>
